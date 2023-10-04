@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Likhith Gowda - Portfolio</title>
+    <link rel="stylesheet" href="pcss.css"/>
+    
+    <script src="pjscript.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Likhith Gowda
+          <div class="contact_info">
+            <img src="https://img.icons8.com/?size=96&id=7rhqrO588QcU&format=png" width="20px"/>
+          liki.apple1@gmail.com
+          </div>
+        
+        <div class="contact_info">
+          <img src="https://img.icons8.com/?size=96&id=I24lanX6Nq71&format=png" width="20px"/>
+          +91 7975733375
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://camo.githubusercontent.com/a4c584bce1c41271485d28f92aaf9f581b3c88b68ca723b6edfd58b4ba988c2b/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f313138373833362f73637265656e73686f74732f363533393432392f70726f6772616d65722e676966" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Likhith Gowda! <img src="" width="60px"/>
+          </h1>
+          <p>
+            I am currently pursuing my 3rd year of Computer Science and Engineering at <a href="https://ssit.edu.in/">Sri Siddhartha Institue of Technology</a>. 
+            I've an intermediate understanding in C++, Python, and front-end web development. From crafting efficient algorithms to building dynamic web interfaces using HTML, CSS, and JavaScript, my skills span diverse realms. 
+            I'm adept at translating ideas into code, fostering innovation, and contributing to the evolving tech landscape.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+       
+        <div class="skill">
+          <img src="https://img.icons8.com/?size=128&id=CMVEhOBzk3Zp&format=png"/>
+          <h6>HTML</h6>
+          
+        </div>  
+
+        <div class="skill">
+          <img src="https://img.icons8.com/?size=128&id=laVIsJnTtYoj&format=png"/>
+          <h6>JavaScript</h6>
+         
+        </div>  
+
+        <div class="skill">
+            <img src="https://img.icons8.com/?size=128&id=5cVdiiKKi0vX&format=png"/>
+            <h6>CSS</h6>
+           
+        </div> 
+
+        <div class="skill">
+            <img src="https://img.icons8.com/?size=128&id=uLDrtp8o8zTG&format=png"/>
+            <h6>Python</h6>
+           
+          
+        </div> 
+
+        <div class="skill">
+          <img src="https://img.icons8.com/?size=128&id=2T6TKY6whzgV&format=png"/>
+          <h6>C++</h6>
+         
+        </div>  
+        <!-- Add more skills here -->
+
+        
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="project-card" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Chatbot</h3>
+            <ul>
+              <li>Developed a secure website integrated with chatbot using HTML, CSS, JavaScript and ChatGPT</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Unit Convertor</h3>
+            <ul>
+              <li>Developed a website that convert units from Indian unit system to American unit system </li>
+            </ul>
+          </div>
+    
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+         <img src="https://img.icons8.com/?size=128&id=71020&format=png" width="50px"/>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="https://img.icons8.com/?size=128&id=48136&format=png" width="50px"/>
+      <h3>Thank you for adding your recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
